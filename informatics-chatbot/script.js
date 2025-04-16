@@ -11,7 +11,7 @@ document.getElementById('chat-form').addEventListener('submit', async (e) => {
 
            // Чат-бот серверіне сұрау жіберу
            try {
-               const response = await fetch('YOUR_RENDER_API_URL/chat', {
+               const response = await fetch('https://informatics-chatbot.onrender.com/chat', {
                    method: 'POST',
                    headers: { 'Content-Type': 'application/json' },
                    body: JSON.stringify({ question: userInput })
